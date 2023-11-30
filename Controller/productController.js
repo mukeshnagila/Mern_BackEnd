@@ -25,6 +25,70 @@ const finduser = async (req, res) => {
     }
 };
 
+
+const addcart = async (req, res) => {
+    console.log(req.body, "803");
+  
+    try {
+        console.log("Request Payload:", req.body);
+      const decoded = jwt.verify(req.body.userId, secret_key,{expiresIn:"1d"});
+      console.log("Decoded Token:", decoded);
+  
+      const isUpdate = await userAccount.updateOne(
+        { _id: req.body.userId },
+        {
+          $addToSet: { cart: req.body.productId },
+        }
+      );
+  
+      if (isUpdate) {
+        return res.send({ code: 200, message: "Add Cart Is Success" });
+      } else {
+        return res.send({ code: 500, message: "Err In Add Cart" });
+      }
+    } catch (error) {
+      console.error("Error verifying token:", error);
+      return res.status(403).json({ code: 403, message: "Forbidden" });
+    }
+  };
+
+   
+const searchProduct = async (req, res) => {
+    const searchItem = req.query.searchItem;
+    try {
+        const result = await productModel.find({
+          // category: { $regex: searchItem, $options: "i" },
+            name: { $regex: searchItem, $options: "i" }
+        })
+        res.send(result);
+    }
+    catch (err) {
+        console.log("Error in searching data:", err);
+    }
+  }
+  
+  const findProduct = async(req, res) => {
+      try {
+          const search = req.body.search;
+          console.log(req.body.search);
+          const searching = await productModel.find({
+            Name: { $regex: new RegExp(search, "i") }, // "i" for case-insensitive search
+          });
+          console.log(search);
+          if (searching.length > 0) {
+            return res
+              .status(200)
+              .json({ success: true, msg: "Product details", data: searching });
+          } else {
+            return res.status(404).json({ msg: "No matching products found" });
+          }
+        } catch (error) {
+          console.error(error);
+          return res.status(500).json({ msg: "Internal server error" });
+        }
+  }
+
+
 const addProduct = async(req,res) => {
     try{
         // const productDetails = req.body;
@@ -924,4 +988,4 @@ const finddata = async(req, res) => {
     res.send (find)
 }
 
-module.exports = {productController, finduser, addProduct, finddata};
+module.exports = {productController, finduser, addProduct, finddata, addcart, findProduct, searchProduct};

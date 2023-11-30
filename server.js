@@ -4,6 +4,7 @@ const cors = require("cors");
 const connectToDatabase = require("./Config/db");
 const routing = require("./Routes/userRouteing");
 const routingProduct = require("./Routes/productRouting");
+const paymentRoute = require("./Routes/paymentRoute");
 
 app.use(express.json());
 app.use(cors({
@@ -11,6 +12,7 @@ app.use(cors({
 }))
 app.use("/api", routing);
 app.use("/api", routingProduct);
+app.use('/api/payment', paymentRoute);
 
 app.get('/', (req, res) => {
     res.send('API is running fine')
