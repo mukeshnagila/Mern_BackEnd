@@ -6,7 +6,7 @@ const data = [
         {
             "id": 1,
             "category":"Business",
-            "SubCategory": "Communication",
+            "subcategory": "Communication",
             "image": "https://img-c.udemycdn.com/course/240x135/14284_6833_17.jpg",
             "name": "Powerful Business Writing: How to Write Concisely",
             "Wname": "Caroline McDevitt",
@@ -17,7 +17,7 @@ const data = [
         {
             "id": 2,
             "category": "Business",
-            "SubCategory": "Communication",
+            "subcategory": "Communication",
             "image": "https://img-c.udemycdn.com/course/240x135/23972_35ee_13.jpg",
             "name": "Improve Communication: Speak Smoothly, Clearly & Confidently",
             "Wname": "Michel Williams",
@@ -28,7 +28,7 @@ const data = [
         {
             "id": 3,
             "category": "Business",
-            "SubCategory": "Communication",
+            "subcategory": "Communication",
             "image": "https://img-c.udemycdn.com/course/240x135/25671_f3b1_4.jpg",
             "name": "How to Write an Effective Research Paper",
             "Wname": "Mohammad Noori",
@@ -39,7 +39,7 @@ const data = [
         {
             "id": 4,
             "category": "Business",
-            "SubCategory": "Communication",
+            "subcategory": "Communication",
             "image": "https://img-c.udemycdn.com/course/240x135/36099_7809_6.jpg",
             "name": "Writing Effective Business Emails",
             "Wname": "Jane Watson",
@@ -50,7 +50,7 @@ const data = [
         {
             "id": 5,
             "category": "Business",
-            "SubCategory": "Communication",
+            "subcategory": "Communication",
             "image": "https://img-c.udemycdn.com/course/240x135/38545_03aa_6.jpg",
             "name": "Minute Taking at Meetings",
             "Wname": "Jane Watson",
@@ -64,7 +64,7 @@ const data = [
         {
             "id": 6,
             "category": "Business",
-            "SubCategory": "Management",
+            "subcategory": "Management",
             "image": "https://img-c.udemycdn.com/course/240x135/15305_0987_6.jpg",
             "name": "Chief Financial Officer Leadership Program",
             "Wname": "Blair cook CPA",
@@ -75,7 +75,7 @@ const data = [
         {
             "id": 7,
             "category": "Business",
-            "SubCategory": "Management",
+            "subcategory": "Management",
             "image": "https://img-c.udemycdn.com/course/240x135/34268_4bc5_17.jpg",
             "name": "QMS Auditor / Lead Auditor Course",
             "Wname": "Sandeep Kumar",
@@ -86,7 +86,7 @@ const data = [
         {
             "id": 8,
             "category": "Business",
-            "SubCategory": "Management",
+            "subcategory": "Management",
             "image": "	https://img-c.udemycdn.com/course/240x135/57427_1fdb_6.jpg",
             "name": "Supervisor Leadership Skills for a Safe Workplace",
             "Wname": "Marie-Claire Ross",
@@ -97,7 +97,7 @@ const data = [
         {
             "id": 9,
             "category": "Business",
-            "SubCategory": "Management",
+            "subcategory": "Management",
             "image": "https://img-c.udemycdn.com/course/240x135/65833_2997_3.jpg",
             "name": "How to Run truly Productive Meetings – and add value",
             "Wname": "7 Keys Solutions",
@@ -108,7 +108,7 @@ const data = [
         {
             "id": 10,
             "category": "Business",
-            "SubCategory": "Management",
+            "subcategory": "Management",
             "image": "https://img-c.udemycdn.com/course/240x135/110240_9cb3_8.jpg",
             "name": "How to Manage & Influence Your Virtual Team",
             "Wname": "Hassan Osman",
@@ -122,7 +122,7 @@ const data = [
         {
             "id": 11,
             "category": "Business",
-            "SubCategory": "Business_Strategy",
+            "subcategory": "Business_Strategy",
             "image": "https://img-c.udemycdn.com/course/240x135/17782_50e2_14.jpg",
             "name": "Master Your Mindset & Brain: Framestorm Your Way to Success",
             "Wname": "Anette Prehn",
@@ -133,7 +133,7 @@ const data = [
         {
             "id": 12,
             "category": "Business",
-            "SubCategory": "Business_Strategy",
+            "subcategory": "Business_Strategy",
             "image": "https://img-c.udemycdn.com/course/240x135/67740_ce84_11.jpg",
             "name": "International Expansion: A Blueprint for Success",
             "Wname": "Anthony Gioeli",
@@ -144,7 +144,7 @@ const data = [
         {
             "id": 13,
             "category": "Business",
-            "SubCategory": "Business_Strategy",
+            "subcategory": "Business_Strategy",
             "image": "https://img-c.udemycdn.com/course/240x135/170840_3e57_5.jpg",
             "name": "How to Write the Ultimate 1 Page Strategic Business Plan",
             "Wname": "William U.Pena",
@@ -155,7 +155,7 @@ const data = [
         {
             "id": 14,
             "category": "Business",
-            "SubCategory": "Business_Strategy",
+            "subcategory": "Business_Strategy",
             "image": "https://img-c.udemycdn.com/course/240x135/179174_fe95_10.jpg",
             "name": "How To Write A Business Plan And A Winning Business Model",
             "Wname": "Alex Genadinik",
@@ -166,7 +166,7 @@ const data = [
         {
             "id": 15,
             "category": "Business",
-            "SubCategory": "Business_Strategy",
+            "subcategory": "Business_Strategy",
             "image": "	https://img-c.udemycdn.com/course/240x135/220646_061f_4.jpg",
             "name": "Business Plan: For Startup & Small Business Success Today!",
             "Wname": "Boomy Tokan",
@@ -180,7 +180,7 @@ const data = [
         {
             "id": 16,
             "category": "Business",
-            "SubCategory": "Operations",
+            "subcategory": "Operations",
             "image": "https://img-c.udemycdn.com/course/240x135/59772_57a8_9.jpg",
             "name": "Customer Success | Profit from the Power of Your Customers",
             "Wname": "Chuck wall",
@@ -191,7 +191,7 @@ const data = [
         {
             "id": 17,
             "category": "Business",
-            "SubCategory": "Operations",
+            "subcategory": "Operations",
             "image": "	https://img-c.udemycdn.com/course/240x135/120872_80cf_16.jpg",
             "name": "Customer Success | How to Understand Your Customers",
             "Wname": "Chuck Wall",
@@ -202,7 +202,7 @@ const data = [
         {
             "id": 18,
             "category": "Business",
-            "SubCategory": "Operations",
+            "subcategory": "Operations",
             "image": "	https://img-c.udemycdn.com/course/240x135/120976_b4c7_7.jpg",
             "name": "Customer Success | How to Put Your Customers First",
             "Wname": "Chuck Wall",
@@ -213,7 +213,7 @@ const data = [
         {
             "id": 19,
             "category": "Business",
-            "SubCategory": "Operations",
+            "subcategory": "Operations",
             "image": "https://img-c.udemycdn.com/course/240x135/120978_ea9a_8.jpg",
             "name": "Customer Success | How to Exceed Your Customers Expectations",
             "Wname": "Chuck Wall",
@@ -224,7 +224,7 @@ const data = [
         {
             "id": 20,
             "category": "Business",
-            "SubCategory": "Operations",
+            "subcategory": "Operations",
             "image": "https://img-c.udemycdn.com/course/240x135/123570_05bc_7.jpg",
             "name": "Customer Success | How to Listen to Today's Customers",
             "Wname": "Chuck Wall",
@@ -238,7 +238,7 @@ const data = [
         {
             "id": 21,
             "category": "Business",
-            "SubCategory": "Human_Resources",
+            "subcategory": "Human_Resources",
             "image": "	https://img-c.udemycdn.com/course/240x135/76978_f766_5.jpg",
             "name": "Understanding and Complying with HIPAA",
             "Wname": "Scott Koller",
@@ -249,7 +249,7 @@ const data = [
         {
             "id": 22,
             "category": "Business",
-            "SubCategory": "Human_Resources",
+            "subcategory": "Human_Resources",
             "image": "	https://img-c.udemycdn.com/course/240x135/125808_615a_9.jpg",
             "name": "World-Class HR: 21st Century Talent Management",
             "Wname": "Josh Bersin",
@@ -260,7 +260,7 @@ const data = [
         {
             "id": 23,
             "category": "Business",
-            "SubCategory": "Human_Resources",
+            "subcategory": "Human_Resources",
             "image": "	https://img-c.udemycdn.com/course/240x135/260018_ddb0_5.jpg",
             "name": "International Business Etiquette",
             "Wname": "Kimberly Law",
@@ -271,7 +271,7 @@ const data = [
         {
             "id": 24,
             "category": "Business",
-            "SubCategory": "Human_Resources",
+            "subcategory": "Human_Resources",
             "image": "https://img-c.udemycdn.com/course/240x135/312042_7f9e_2.jpg",
             "name": "Recruitment Interviewing Essentials: Interviewing Made Easy",
             "Wname": "Richard Lock",
@@ -282,7 +282,7 @@ const data = [
         {
             "id": 25,
             "category": "Business",
-            "SubCategory": "Human_Resources",
+            "subcategory": "Human_Resources",
             "image": "https://img-c.udemycdn.com/course/240x135/322302_1979_2.jpg",
             "name": "Interviewing Skills: Conducting Job Interviews",
             "Wname": "TJ Walker",
