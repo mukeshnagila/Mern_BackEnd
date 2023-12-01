@@ -300,7 +300,7 @@ const data = [
         {
             "id": 26,
             "category": "Finance_Accounting",
-            "subcategory": "Economic",
+            "subcategory": "Accounting_Bookkeeping",
             "image": "https://img-c.udemycdn.com/course/240x135/32908_4e19_7.jpg",
             "name": "The Complete Introduction To Accounting and Finance",
             "Wname": "Chris Benjamin",
@@ -311,7 +311,7 @@ const data = [
         {
             "id": 27,
             "category": "Finance_Accounting",
-            "subcategory": "Economic",
+            "subcategory": "Accounting_Bookkeeping",
             "image": "https://img-c.udemycdn.com/course/240x135/48841_9110_7.jpg",
             "name": "Accounting in 60 Minutes - A Brief Introduction",
             "Wname": "Vincent Turner",
