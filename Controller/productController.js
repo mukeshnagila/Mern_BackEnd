@@ -1,6 +1,7 @@
 const data = require("../Store/data");
 const userModel = require("../Models/userModel");
 const productModel = require("../Models/productModel");
+const Order = require("../Models/orderModel");
 
 const productController = (req,res) => {
     return res.send(data);
@@ -87,6 +88,23 @@ const searchProduct = async (req, res) => {
           return res.status(500).json({ msg: "Internal server error" });
         }
   }
+
+const addOrder = async (req, res) => {
+    const orderDetails = req.body;
+    try {
+        const newOrder = await Order.create(orderDetails);
+        return res.status(201).json({ success: true, order: newOrder });
+    } catch (error) {
+        console.error("Error adding order:", error);
+        return res.status(500).json({ success: false, error: "Internal Server Error" });
+    }
+};
+
+const findOrder = async(req, res) => {
+  const find = await Order.find({});
+  console.log(find);
+  res.send (find)
+}
 
 
 const addProduct = async(req,res) => {
@@ -988,4 +1006,4 @@ const finddata = async(req, res) => {
     res.send (find)
 }
 
-module.exports = {productController, finduser, addProduct, finddata, addcart, findProduct, searchProduct};
+module.exports = {productController, finduser, addProduct, finddata, addcart, findProduct, searchProduct, addOrder,findOrder};

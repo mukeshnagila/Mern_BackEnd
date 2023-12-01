@@ -1,4 +1,4 @@
-const {productController, finduser, addProduct, finddata, addcart, searchProduct, findProduct} = require("../Controller/productController");
+const {productController, finduser, addProduct, finddata, addcart, searchProduct, findProduct, addOrder, findOrder} = require("../Controller/productController");
 const authMiddleware = require("../Auth/middleware");
 
 const routingProduct = require("express").Router();
@@ -12,6 +12,10 @@ const routingProduct = require("express").Router();
         routingProduct.get("/findProduct", finddata);
 
         routingProduct.get("/addcart",authMiddleware, addcart);
+
+        routingProduct.post("/addOrder", authMiddleware, addOrder);
+
+        routingProduct.get("/findOrder",authMiddleware, findOrder);
 
         routingProduct.get("/search", searchProduct);
 
