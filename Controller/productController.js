@@ -58,9 +58,15 @@ const searchProduct = async (req, res) => {
     const searchItem = req.query.searchItem;
     try {
         const result = await productModel.find({
-          // category: { $regex: searchItem, $options: "i" },
-            name: { $regex: searchItem, $options: "i" }
+          $or: [
+            { category: { $regex: searchItem, $options: "i" } },
+            { name: { $regex: searchItem, $options: "i" } },
+            { subcategory: { $regex: searchItem, $options: "i" } },
+          ],
         })
+
+        // console.log('Search Term:', searchItem);
+        // console.log('Search Results:', result);
         res.send(result);
     }
     catch (err) {
@@ -73,7 +79,7 @@ const searchProduct = async (req, res) => {
           const search = req.body.search;
           console.log(req.body.search);
           const searching = await productModel.find({
-            Name: { $regex: new RegExp(search, "i") }, // "i" for case-insensitive search
+            name: { $regex: new RegExp(search, "i") }, // "i" for case-insensitive search
           });
           console.log(search);
           if (searching.length > 0) {
